@@ -6,7 +6,7 @@ SCC <- readRDS("./data/Source_Classification_Code.rds")
 # Total emissions for each year from all sources
 
 total_by_year<- NEI %>%
-  group_by(year) %>%
+  group_by(year) %>% 
   summarise(total_emissions = sum(Emissions))
 
 
