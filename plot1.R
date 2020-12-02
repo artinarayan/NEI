@@ -8,7 +8,7 @@ SCC <- readRDS("./data/Source_Classification_Code.rds")
 total_by_year<- NEI %>%
   group_by(year) %>% 
   summarise(total_emissions = sum(Emissions))
-
+ 
 
 # Create a bar plot to show total emissions by year
 png(filename = "plot1.png")
